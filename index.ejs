@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="./public/css/swiper.min.css">
+
+   <style type="text/css">
+    *{
+      margin:0;
+      padding: 0;
+      font-family: "Microsoft YaHei"!important; 
+
+      }
+    ul li{
+        list-style: none;
+      }
+
+    body{
+      min-width: 320px;
+      max-width: 640px;
+      border:1px solid red;
+      margin:0 auto;
+      font-family: "Microsoft YaHei"!important; 
+      }
+    
+  </style>
+ </head>
+
+
+<body>
+
+
+             <!--  公共头部 -->
+            <div id="header">
+              <div id="play_img">  
+                <div><img src="./public/zhangmen.jpg"></div>
+                <div><img src="./public/zhangmen.jpg"></div>
+                <div><img src="./public/zhangmen.jpg"></div>
+                <div><img src="./public/zhangmen.jpg"></div>
+              </div>
+
+
+            </div>
+
+
+            <div id="footer">
+                <div class="list1">
+                  <img src="">
+                  <img src="">
+                  <span></span>
+                </div>
+                <div class="list2">
+                  <img src="">
+                  <img src="">
+                  <span></span>
+                </div>
+                <div class="list3">
+                  <img src="">
+                  <img src="">
+                  <span></span>
+                </div>
+                <div class="list4">
+                  <img src="">
+                  <img src="">
+                  <span></span>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <!-- AXIOS SDK 白板SDK依赖axios（后续版本会去掉该依赖） -->
+            <script src="https://sqimg.qq.com/expert_qq/edu/axios/axios.min.js"></script>
+
+            <!-- WebRTC SDK -->
+            <script src="https://sqimg.qq.com/expert_qq/webrtc/3.1.0/WebRTCAPI.min.js"></script>
+            <!-- WebIM SDK -->
+            <script src="https://sqimg.qq.com/expert_qq/webim/1.7.1/webim.min.js"></script>
+            <!-- COS SDK -->
+            <script src="https://sqimg.qq.com/expert_qq/tedu/cos/5.1.0/cos.min.js"></script>
+            <!-- 白板SDK -->
+            <script src="https://sqimg.qq.com/expert_qq/tedu/board/2.1.0/TEduBoard.min.js"></script>
+            <!-- <script src="./libs/TEduBoard.min.js"></script> -->
+
+            <!-- TIC SDK 可根据开源代码自行编译TIC-->
+            <script src="https://sqimg.qq.com/expert_qq/tedu/tic/2.1.0/TIC.min.js"></script>
+            <!-- <script src="./libs/TIC.js"></script> -->
+
+
+
+
+            <script src="./libs/purl.js"></script>
+            <script src="./libs/vconsole.min.js"></script>
+            <script src="./js/account_dev.js"></script>
+            <script src="./public/js/swiper.min.js"></script>
+
+            <script>
+              if (location.href.indexOf('dev') > -1) {
+                var vConsole = new VConsole();
+              }
+              var mySwiper = new swiper('#header'{
+                autoPlay:true;
+              })
+
+            </script>
+
+
+</body>
+
+</html>
